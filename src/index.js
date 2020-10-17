@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import HeadNav from './HeadNav';
 import * as serviceWorker from './serviceWorker';
+import 'react-app-polyfill/stable'
 
 ReactDOM.render(
   <div>
