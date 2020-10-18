@@ -19,7 +19,7 @@ export default function HeadNav(){
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Button href="/home">Home</Button>
-          <Button href="./infos.html">Infos</Button>
+          <Button href="./infos.html">Infos</Button>    
           <MyButton/>
         </Nav>
       </Navbar.Collapse>
