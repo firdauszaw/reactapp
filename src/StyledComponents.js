@@ -8,8 +8,9 @@ const MyButton = styled(Button)({
   borderRadius: 3,
   boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
   color: 'white',
-  height: 48,
+  height: 35,
   padding: '0 30px',
+  marginLeft: 5,
 });
 
 export default function StyledComponents() {

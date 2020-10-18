@@ -3,13 +3,13 @@ import './App.css';
 import { Container } from '@material-ui/core';
 import './index.css'
 
+
 function App() {
   return (
     <>
-      <Container className="bg">
+      <Container disableGutters='true'>
         <div className="App">
-          <header className="App-header">
-          </header>
+          <header className="App-header"></header>
         </div>
       </Container>
     </>

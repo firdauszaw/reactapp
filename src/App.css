@@ -21,10 +21,10 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #87cefa;
   background-image: url("image.png");
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .App-link {

@@ -1,42 +1,29 @@
 import React from 'react';
-import {AppBar, Toolbar, IconButton, makeStyles} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+import {SvgIcon, Button} from '@material-ui/core';
+import {Navbar, Nav} from 'react-bootstrap';
 import MyButton from './StyledComponents';
-import Avatar from '@material-ui/core/Avatar';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow : 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(150),
-  },
-  MButton: {
-    marginRight: theme.spacing(10),
-  },
-  flright: {
-    marginLeft: 45,
-  },
-}));
-
-export default function HeadNav(){
-
-  
-  const classes = useStyles();
-  
-  return (
-    <>
-      <div className = {classes.root}>
-        <AppBar position="static" style={{ background: '#2E3B55' }}>
-          <Toolbar>
-            <IconButton edge="start" color="inherit" aria-label="menu" className={classes.menuButton}>
-              <MenuIcon />
-            </IconButton>
-            <MyButton className = {classes.MButton}/>
-            <Avatar alt="Deux" src="kindpng_2583401.png" className={classes.flright}/>
-          </Toolbar>
-        </AppBar>
-      </div>
-    </>
+function HomeIcon(props){
+  return(
+    <SvgIcon {...props}>
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+    </SvgIcon>
   );
 }
+export default function HeadNav(){
+  return (
+    <>
+    <Navbar bg="dark"  expand="lg">
+      <HomeIcon color="primary" fontSize="large"/>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Button href="/home">Home</Button>
+          <Button href="./infos.html">Infos</Button>
+          <MyButton/>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+    </>
+  );
+};
